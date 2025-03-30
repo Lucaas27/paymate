@@ -42,6 +42,7 @@ jobs:
             @semantic-release/github
             @semantic-release/git
             @semantic-release/exec
+            conventional-changelog-conventionalcommits@8
           branches: |
             [
               'main',
