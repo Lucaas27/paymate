@@ -1,0 +1,8 @@
+services:
+  pay-mate:
+    container_name: paymate
+    image: ghcr.io/lucaas27/paymate:latest
+    build:
+      context: .
+      target: production
+      dockerfile: ./Dockerfile
