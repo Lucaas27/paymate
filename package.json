@@ -6,6 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "test": "echo \"No tests yet\" && exit 0",
     "lint": "next lint",
     "lint:fix": "eslint --max-warnings=0 src --fix",
     "format": "prettier --write .",
