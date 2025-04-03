@@ -4,7 +4,6 @@ services:
     image: ghcr.io/lucaas27/paymate:latest
     build:
       context: .
-      target: production
       dockerfile: ./Dockerfile
     ports:
       - 3005:3000
