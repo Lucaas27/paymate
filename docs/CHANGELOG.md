@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.0](https://github.com/Lucaas27/paymate/compare/v0.0.4...v0.1.0) (2025-04-03)
+
+### Features
+
+* add dashboard page with invoice table and UI components ([8465aed](https://github.com/Lucaas27/paymate/commit/8465aedcd1b010d2f0b20312bccc54e816ac33d5))
+
 ## [0.0.4](https://github.com/Lucaas27/paymate/compare/v0.0.3...v0.0.4) (2025-04-03)
 
 ### Bug Fixes
