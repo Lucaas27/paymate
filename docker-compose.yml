@@ -6,3 +6,5 @@ services:
       context: .
       target: production
       dockerfile: ./Dockerfile
+    ports:
+      - 3005:3000
