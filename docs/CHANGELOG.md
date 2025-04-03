@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.0.4](https://github.com/Lucaas27/paymate/compare/v0.0.3...v0.0.4) (2025-04-03)
+
+### Bug Fixes
+
+* remove production target from GitHub Actions CD workflow ([ad2e487](https://github.com/Lucaas27/paymate/commit/ad2e48729585af3234782d2c2d6ab267a547b3d1))
+
 ## [0.0.3](https://github.com/Lucaas27/paymate/compare/v0.0.2...v0.0.3) (2025-04-03)
 
 ### Bug Fixes
