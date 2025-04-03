@@ -94,7 +94,6 @@ jobs:
         with:
           context: .
           push: true
-          target: production
           file: ./Dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           cache-from: type=gha
