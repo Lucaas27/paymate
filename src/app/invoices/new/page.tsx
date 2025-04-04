@@ -1,49 +1,32 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
+import { InvoiceForm } from "@/components/invoice-form"
+import Image from "next/image"
 
 export default function Page() {
   return (
-    <div className="flex flex-col gap-6 justify-center">
-      <div className="flex items-center justify-between">
-        <h1 className="text-3xl font-bold">Create Invoice</h1>
-      </div>
+    <div className="container mx-auto px-4 py-8">
+      <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
+        <div className="flex-1 max-w-sm">
+          <div className="mb-8">
+            <h1 className="text-4xl font-bold mb-4">Create Invoice</h1>
+            <p className="text-muted-foreground">
+              Fill out the form to generate a new invoice for your client.
+            </p>
+          </div>
+          <InvoiceForm />
+        </div>
 
-      <form className="grid max-w-sm gap-4">
-        <div>
-          <Label htmlFor="name" className="block m-2 font-semibold text-sm">
-            Billing Name
-          </Label>
-          <Input name="name" id="name" type="text" />
+        <div className="flex-1 max-w-md order-first md:order-last">
+          <div className="relative aspect-square">
+            <Image
+              src="/invoice-illustration.svg"
+              alt="Invoice illustration"
+              fill
+              className="object-contain"
+              priority
+            />
+          </div>
         </div>
-        <div>
-          <Label htmlFor="email" className="block m-2 font-semibold text-sm">
-            Billing Email
-          </Label>
-          <Input name="email" id="email" type="text" />
-        </div>
-        <div>
-          <Label htmlFor="amount" className="block m-2 font-semibold text-sm">
-            Amount
-          </Label>
-          <Input name="amount" id="amount" type="value" />
-        </div>
-        <div>
-          <Label
-            htmlFor="description"
-            className="block m-2 font-semibold text-sm"
-          >
-            Description
-          </Label>
-          <Textarea name="description" id="description"></Textarea>
-        </div>
-        <div>
-          <Button className="w-full font-semibold cursor-pointer">
-            Submit
-          </Button>
-        </div>
-      </form>
+      </div>
     </div>
   )
 }
