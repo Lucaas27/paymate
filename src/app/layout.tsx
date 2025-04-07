@@ -1,5 +1,13 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import { Roboto } from "next/font/google"
+import { NextFont } from "next/dist/compiled/@next/font"
+
+const openSans: NextFont = Roboto({
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={openSans.className}>
       <body className="flex flex-col max-w-5xl mx-auto">
         <header>Header</header>
         <main className="flex-1 my-12">{children}</main>

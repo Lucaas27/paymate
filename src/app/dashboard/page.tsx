@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button"
 import { CirclePlus } from "lucide-react"
 import Link from "next/link"
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="flex flex-col gap-6 justify-center text-center">
       <div className="flex items-center justify-between">
@@ -53,7 +53,7 @@ export default function Home() {
               <span>test@gmail.com</span>
             </TableCell>
             <TableCell className="text-center p-4">
-              <Badge className="rounded-full pb-1.5">Open</Badge>
+              <Badge className="rounded-full">Open</Badge>
             </TableCell>
             <TableCell className="text-right p-4">
               <span className="font-semibold">£250.00</span>
