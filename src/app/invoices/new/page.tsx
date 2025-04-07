@@ -1,7 +1,7 @@
 import { InvoiceForm } from "@/components/invoice-form"
 import Image from "next/image"
 
-export default function Page() {
+export default async function Page() {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex flex-col md:flex-row gap-12 items-center justify-center">
